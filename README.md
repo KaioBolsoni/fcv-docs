@@ -42,7 +42,10 @@ O passo a passo para rodar está no README do `fcv-backend`.
 | Grupo 2 | Caio | [Cai0Braga](https://github.com/Cai0Braga) |
 | Grupo 2 | Gabriel | [gabrielsales007](https://github.com/gabrielsales007) |
 | Grupo 2 | Aryelle | |
-| Grupo 3 | Samuel | [Samuel-SouzaZz](https://github.com/Samuel-SouzaZz) |
+| Grupo 3 | Heitor | [HeitorPolastri](https://github.com/HeitorPolastri) |
+| Grupo 3 | Samuel Salazar | [salazarr0](https://github.com/salazarr0) |
+| Grupo 3 | Samuel Souza | [Samuel-SouzaZz](https://github.com/Samuel-SouzaZz) |
+| Grupo 3 | Thales | [thalesfercaetano](https://github.com/thalesfercaetano) |
 
 ## Como atualizar
 
