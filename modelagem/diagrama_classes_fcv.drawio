@@ -1,0 +1,323 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama de Classes FCV" id="fcv-classes">
+    <mxGraphModel dx="1214" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=0;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;" value="Diagrama de Classes - Plataforma de Benefícios e Relacionamento FCV (Grupo 2 - Sprint 2)" vertex="1">
+          <mxGeometry height="40" width="1400" x="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#ffffff;fontSize=13;" value="Perfil de Acesso" vertex="1">
+          <mxGeometry height="126" width="420" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- nome: texto&#xa;- escopo: FCV | COLABORADOR | CONVENIADO&#xa;- descricao: texto&#xa;- permissoes: texto / lista&#xa;- status: ATIVO | INATIVO" vertex="1">
+          <mxGeometry height="100" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#ffffff;fontSize=13;" value="Usuário" vertex="1">
+          <mxGeometry height="126" width="420" x="620" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="c3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- nome: texto&#xa;- email: texto&#xa;- senha: texto (hash)&#xa;- status: ATIVO | INATIVO&#xa;- data_criacao: data" vertex="1">
+          <mxGeometry height="100" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;fontSize=13;" value="Conveniado" vertex="1">
+          <mxGeometry height="141" width="420" x="1200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" parent="c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- nome_fantasia: texto&#xa;- razao_social: texto&#xa;- categoria: texto&#xa;- cnpj: texto&#xa;- endereco: texto&#xa;- status: ATIVO | INATIVO | EM_ANALISE" vertex="1">
+          <mxGeometry height="115" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;fontSize=13;" value="Colaborador" vertex="1">
+          <mxGeometry height="141" width="420" x="40" y="361" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" parent="c7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- matricula: texto&#xa;- setor: texto&#xa;- cargo: texto&#xa;- data_admissao: data&#xa;- status: ATIVO | INATIVO | AFASTADO&#xa;- telefone: texto (opcional)" vertex="1">
+          <mxGeometry height="115" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;swimlaneFillColor=#ffffff;fontSize=13;" value="Utilização" vertex="1">
+          <mxGeometry height="171" width="420" x="620" y="361" as="geometry" />
+        </mxCell>
+        <mxCell id="a10" parent="c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- token_qrcode: texto&#xa;- data_solicitacao: data/hora&#xa;- data_confirmacao: data/hora (opcional)&#xa;- valor_aplicado: decimal&#xa;- canal_validacao: APP_CONVENIADO | TERMINAL_IOT&#xa;- status: PENDENTE | APROVADA |&#xa;          REPROVADA | ESTORNADA&#xa;- observacoes: texto (opcional)" vertex="1">
+          <mxGeometry height="145" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;swimlaneFillColor=#ffffff;fontSize=13;" value="Benefício × Conveniado" vertex="1">
+          <mxGeometry height="66" width="420" x="1200" y="361" as="geometry" />
+        </mxCell>
+        <mxCell id="a12" parent="c11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- status: ATIVO | INATIVO" vertex="1">
+          <mxGeometry height="40" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;swimlaneFillColor=#ffffff;fontSize=13;" value="Benefício" vertex="1">
+          <mxGeometry height="246" width="420" x="1860" y="361" as="geometry" />
+        </mxCell>
+        <mxCell id="a14" parent="c13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- nome: texto&#xa;- descricao: texto&#xa;- status: ATIVO | INATIVO | DESCONTINUADO&#xa;- tipo_beneficio: PERCENTUAL | VALOR_FIXO&#xa;- valor: decimal&#xa;- quantidade_maxima_utilizacoes: inteiro&#xa;- tipo_janela: CALENDARIO_FIXO | JANELA_MOVEL&#xa;- unidade_ciclo: ANO | MES | SEMANA&#xa;- dia_reset: data/dia (opcional)&#xa;- intervalo_valor: inteiro&#xa;- intervalo_unidade: DIA | MES&#xa;- referencia_contagem: ULTIMA_UTILIZACAO |&#xa;          DATA_ADMISSAO_COLABORADOR" vertex="1">
+          <mxGeometry height="220" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;swimlaneFillColor=#ffffff;fontSize=13;" value="Benefício da Campanha × Conveniado" vertex="1">
+          <mxGeometry height="66" width="420" x="1200" y="832" as="geometry" />
+        </mxCell>
+        <mxCell id="a16" parent="c15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- status: ATIVO | INATIVO" vertex="1">
+          <mxGeometry height="40" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;swimlaneFillColor=#ffffff;fontSize=13;" value="Benefício da Campanha" vertex="1">
+          <mxGeometry height="141" width="420" x="1860" y="832" as="geometry" />
+        </mxCell>
+        <mxCell id="a18" parent="c17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- nome: texto&#xa;- descricao: texto&#xa;- tipo_beneficio: PERCENTUAL | VALOR_FIXO&#xa;- valor: decimal&#xa;- quantidade_maxima_utilizacoes: inteiro (opcional)&#xa;- status: ATIVO | INATIVO" vertex="1">
+          <mxGeometry height="115" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;swimlaneFillColor=#ffffff;fontSize=13;" value="Campanha / Evento" vertex="1">
+          <mxGeometry height="186" width="420" x="2440" y="832" as="geometry" />
+        </mxCell>
+        <mxCell id="a20" parent="c19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Courier New;" value="- id: identificador&#xa;- nome: texto&#xa;- tipo: CAMPANHA | EVENTO_INTERNO |&#xa;        EVENTO_PATROCINADO | VOUCHER | CORTESIA&#xa;- descricao: texto&#xa;- data_inicio: data&#xa;- data_fim: data&#xa;- criterio_elegibilidade: texto / lista&#xa;- patrocinador: texto (opcional)&#xa;- status: PLANEJADA | ATIVA | ENCERRADA | CANCELADA" vertex="1">
+          <mxGeometry height="160" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5000;entryDx=0;entryDy=0;" target="c1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t22" connectable="0" parent="e21" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t23" connectable="0" parent="e21" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t24" connectable="0" parent="e21" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="◀ possui" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0;exitY=0.4468;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="c3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t26" connectable="0" parent="e25" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t27" connectable="0" parent="e25" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t28" connectable="0" parent="e25" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="◀ acessa via" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="c7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0.8;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="c3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="376" y="256" />
+              <mxPoint x="725" y="256" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t30" connectable="0" parent="e29" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="16" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t31" connectable="0" parent="e29" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="16" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t32" connectable="0" parent="e29" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="acessa via ▶" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="c7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.4123;entryDx=0;entryDy=0;" target="c9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t34" connectable="0" parent="e33" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t35" connectable="0" parent="e33" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="-22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t36" connectable="0" parent="e33" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="solicita ▶" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e37" edge="1" parent="1" source="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="c11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t38" connectable="0" parent="e37" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="16" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t39" connectable="0" parent="e37" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="16" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t40" connectable="0" parent="e37" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="▼ possui ofertas" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e41" edge="1" parent="1" source="c13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0;exitY=0.1341;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="c11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t42" connectable="0" parent="e41" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t43" connectable="0" parent="e41" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t44" connectable="0" parent="e41" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="◀ possui ofertas" vertex="1">
+          <mxGeometry relative="1" x="-0.4" as="geometry">
+            <mxPoint x="-18" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e45" edge="1" parent="1" source="c11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.1930;entryDx=0;entryDy=0;" target="c9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t46" connectable="0" parent="e45" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t47" connectable="0" parent="e45" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t48" connectable="0" parent="e45" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="◀ origina" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e49" edge="1" parent="1" source="c17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0;exitY=0.2340;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="c15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t50" connectable="0" parent="e49" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t51" connectable="0" parent="e49" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t52" connectable="0" parent="e49" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="◀ possui ofertas" vertex="1">
+          <mxGeometry relative="1" x="-0.4" as="geometry">
+            <mxPoint x="-18" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e53" edge="1" parent="1" source="c15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.8;entryDx=0;entryDy=0;" target="c9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="865" />
+              <mxPoint x="1100" y="497.8" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t54" connectable="0" parent="e53" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t55" connectable="0" parent="e53" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t56" connectable="0" parent="e53" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="▲ origina" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e57" edge="1" parent="1" source="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=1;exitY=0.85;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="c15" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1660" y="179.85" />
+              <mxPoint x="1660" y="792" />
+              <mxPoint x="1515" y="792" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t58" connectable="0" parent="e57" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t59" connectable="0" parent="e57" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="16" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t60" connectable="0" parent="e57" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="▼ possui ofertas" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e61" edge="1" parent="1" source="c19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;fontSize=11;exitX=0;exitY=0.4839;exitDx=0;exitDy=0;entryX=1;entryY=0.6383;entryDx=0;entryDy=0;" target="c17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t62" connectable="0" parent="e61" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t63" connectable="0" parent="e61" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=1;" value="1..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t64" connectable="0" parent="e61" style="edgeLabel;resizable=0;html=1;labelBackgroundColor=#ffffff;fontSize=11;fontStyle=2;" value="◀ contém" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n66" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#f3e5f5;strokeColor=#9c27b0;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Cardinalidade (multiplicidade)&lt;/b&gt;&lt;br&gt;&lt;br&gt;Cada número na ponta da linha responde:&lt;br&gt;&lt;i&gt;&quot;pegando UM objeto do outro lado, quantos DESTE lado podem estar ligados a ele?&quot;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;1&lt;/b&gt; = exatamente um (obrigatório)&lt;br&gt;&lt;b&gt;0..1&lt;/b&gt; = nenhum ou um (opcional)&lt;br&gt;&lt;b&gt;0..*&lt;/b&gt; = nenhum ou vários&lt;br&gt;&lt;b&gt;1..*&lt;/b&gt; = pelo menos um, podendo ser vários&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; Colaborador &lt;b&gt;1&lt;/b&gt; ——— &lt;b&gt;0..*&lt;/b&gt; Utilização&lt;br&gt;• 1 colaborador tem nenhuma ou várias utilizações&lt;br&gt;• 1 utilização pertence a exatamente 1 colaborador&lt;br&gt;&lt;br&gt;&lt;b&gt;Tipos de relação&lt;/b&gt; (olhando o máximo de cada ponta):&lt;br&gt;• 1 e 1 → &lt;b&gt;1:1&lt;/b&gt; (Colaborador ↔ Usuário)&lt;br&gt;• 1 e * → &lt;b&gt;1:N&lt;/b&gt; (Colaborador → Utilização)&lt;br&gt;• * e * → &lt;b&gt;N:N&lt;/b&gt;, vira uma classe no meio (Benefício × Conveniado)&lt;br&gt;&lt;br&gt;&lt;b&gt;Mínimo 0 ou 1?&lt;/b&gt; Pergunte: &quot;pode existir um sem o outro?&quot; Se pode, é 0." vertex="1">
+          <mxGeometry height="380" width="420" x="40" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="h68" parent="1" style="text;html=0;fontSize=18;fontStyle=1;align=left;verticalAlign=middle;" value="O que é cada classe" vertex="1">
+          <mxGeometry height="36" width="600" x="40" y="1138" as="geometry" />
+        </mxCell>
+        <mxCell id="n69" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Usuário&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; guardar a conta de acesso (login) de qualquer pessoa: nome, e-mail e senha. Não sabe se é colaborador, conveniado ou FCV; um usuário da FCV é só um Usuário sem Colaborador nem Conveniado ligado.&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;maria@fcv.org, funcionária da Fundação, entra no portal web.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="40" y="1188" as="geometry" />
+        </mxCell>
+        <mxCell id="n70" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Perfil de Acesso&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; definir o que cada Usuário pode fazer no sistema, conforme o escopo (FCV, COLABORADOR ou CONVENIADO). &quot;permissoes&quot; é a lista de funcionalidades liberadas.&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;FCV_ADMINISTRADOR gerencia tudo, inclusive usuários; FCV_OPERADOR cuida do dia a dia, sem gerenciar usuários.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="520" y="1188" as="geometry" />
+        </mxCell>
+        <mxCell id="n71" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Colaborador&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; representar a pessoa que trabalha na Fundação e tem direito aos benefícios. Guarda só os dados do vínculo (matrícula, setor, cargo, admissão); nome e e-mail ficam em Usuário.&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;João, matrícula 1234, setor Administrativo, gera o QR Code do vale academia no app.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="1000" y="1188" as="geometry" />
+        </mxCell>
+        <mxCell id="n72" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Conveniado&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; representar o estabelecimento parceiro que oferece benefícios. É quem lê o QR Code e aprova ou reprova o resgate, pelo app ou pelo totem.&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;Farmácia Saúde, categoria farmácia, oferece 20% de desconto aos colaboradores.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="1480" y="1188" as="geometry" />
+        </mxCell>
+        <mxCell id="n73" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Benefício&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; cadastrar os benefícios recorrentes da Fundação: o desconto (percentual ou valor fixo) e quantas vezes pode ser usado por período (CALENDARIO_FIXO ou JANELA_MOVEL).&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;Vale academia, 1x por mês, reseta todo dia 1.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="1960" y="1188" as="geometry" />
+        </mxCell>
+        <mxCell id="n74" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Benefício × Conveniado&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; dizer quais conveniados oferecem cada benefício (a &quot;oferta&quot;). Um benefício pode estar em vários conveniados, e vice-versa (N:N).&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;O desconto em farmácia é ofertado pela Farmácia A e pela Farmácia B.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="40" y="1398" as="geometry" />
+        </mxCell>
+        <mxCell id="n75" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Campanha / Evento&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; cadastrar ações temporárias da Fundação, com início, fim, público elegível e patrocinador opcional. É o &quot;contêiner&quot; dos itens da campanha.&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;Corrida FCV 2026.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="520" y="1398" as="geometry" />
+        </mxCell>
+        <mxCell id="n76" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Benefício da Campanha&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; cadastrar os itens concedidos dentro de uma campanha. É uma &quot;cópia&quot; de Benefício sem periodicidade (caso único), com limite de quantidade opcional.&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;Água mineral na Corrida FCV, limite de 50 copos.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="1000" y="1398" as="geometry" />
+        </mxCell>
+        <mxCell id="n77" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Benefício da Campanha × Conveniado&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; dizer quais conveniados oferecem cada item de campanha. Um item pode ter mais de um conveniado ofertando (N:N).&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;A massagem da Corrida FCV é oferecida pela Clínica X.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="1480" y="1398" as="geometry" />
+        </mxCell>
+        <mxCell id="n78" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Utilização&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Serve para&lt;/b&gt; registrar o histórico de cada resgate. Nasce PENDENTE quando o colaborador gera o QR Code; o conveniado aprova ou reprova; só a FCV pode estornar.&lt;br&gt;&lt;br&gt;&lt;b&gt;Exemplo:&lt;/b&gt; &lt;i&gt;João gerou o QR do vale academia, a Academia Y leu no totem e aprovou.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="440" x="1960" y="1398" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
