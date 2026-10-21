@@ -1,23 +1,15 @@
 # FCV Docs
 
-Documentação geral da Plataforma de Benefícios e Relacionamento da Fundação Cristiano Varella (FCV),
-projeto integrador do 5º período da Faminas (Programação para Dispositivos Móveis e Robótica Aplicada).
-
-A plataforma substitui o controle de benefícios feito em planilha por três frentes que usam a mesma API:
-o app do colaborador e do conveniado, o totem de validação (IoT) e o portal web de gestão da FCV.
-
-Este repositório guarda só o que vale para o sistema inteiro. O que é de uma frente só fica no repositório dela.
+Documentação geral da Plataforma de Benefícios FCV (projeto integrador, 5º período, Faminas).
+Aqui fica só o que vale para o sistema inteiro; o que é de uma frente fica no repositório dela.
 
 ## Documentos
 
-| Documento | O que tem | Arquivo |
-| --- | --- | --- |
-| Arquitetura e tecnologias (ADR) | Stack e padrão de arquitetura da API, do portal e do app | [arquitetura/ADR_Arquitetura_Tecnologias_FCV.pdf](arquitetura/ADR_Arquitetura_Tecnologias_FCV.pdf) |
-| Requisitos | Escopo do semestre, 43 requisitos funcionais, 19 não funcionais e diagramas de casos de uso | [requisitos/Documento_Requisitos_FCV.pdf](requisitos/Documento_Requisitos_FCV.pdf) |
-| Diagrama de classes | As 10 entidades do sistema, seus campos e como se relacionam | [modelagem/diagrama_classes_fcv.drawio](modelagem/diagrama_classes_fcv.drawio) |
-
-O diagrama de classes é um arquivo do draw.io. Para abrir: acesse [app.diagrams.net](https://app.diagrams.net),
-clique em **Abrir de → Dispositivo** e escolha o arquivo baixado daqui.
+| Documento | O que tem |
+| --- | --- |
+| [ADR](arquitetura/ADR_Arquitetura_Tecnologias_FCV.pdf) | Stack e arquitetura da API, do portal e do app |
+| [Requisitos](requisitos/Documento_Requisitos_FCV.pdf) | Escopo, requisitos funcionais e não funcionais, casos de uso |
+| [Diagrama de classes](modelagem/diagrama_classes_fcv.drawio) | As 10 entidades e como se relacionam (abrir no [draw.io](https://app.diagrams.net)) |
 
 ## Repositórios do projeto
 
