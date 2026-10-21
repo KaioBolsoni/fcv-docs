@@ -48,6 +48,7 @@ O passo a passo para rodar está no README do `fcv-backend`.
 | João | [joaovictorcascardo](https://github.com/joaovictorcascardo) |
 | Caio | [Cai0Braga](https://github.com/Cai0Braga) |
 | Gabriel | [gabrielsales007](https://github.com/gabrielsales007) |
+| Aryelle | [elle4ry](https://github.com/elle4ry) |
 
 ### Grupo 3
 
