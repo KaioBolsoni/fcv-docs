@@ -17,7 +17,7 @@ Aqui fica só o que vale para o sistema inteiro; o que é de uma frente fica no 
 | --- | --- | --- |
 | API | [joaovictorcascardo/fcv-backend](https://github.com/joaovictorcascardo/fcv-backend) | Grupo 2 |
 | App mobile | [PedroCacador/fundacao-mobile](https://github.com/PedroCacador/fundacao-mobile) | Grupo 1 |
-| Portal web | Samuel-SouzaZz/Frontend- (privado) | Grupo 3 |
+| Portal web | [Samuel-SouzaZz/Frontend- (privado)](https://github.com/Samuel-SouzaZz/Frontend-) | Grupo 3 |
 
 As rotas da API estão documentadas no Swagger: com a API rodando, acesse `http://localhost:3333/api/v1/docs`.
 O passo a passo para rodar está no README do `fcv-backend`.
